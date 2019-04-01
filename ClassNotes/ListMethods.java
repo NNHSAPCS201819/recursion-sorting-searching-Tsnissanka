@@ -42,7 +42,8 @@ public class ListMethods
         return list;
     }
     
-   public static ArrayList even(ArrayList<Integer> list){
+   /*
+    * public static ArrayList even(ArrayList<Integer> list){
        ArrayList<Integer> evenIndexed = ListMethods.deepClone(list);
        if (evenIndexed.size() == 2){
            return evenIndexed;
@@ -53,6 +54,8 @@ public class ListMethods
            evenIndexed = ListMethods.even(evenIndexed);
            evenIndexed.add(0, num2);
         }
+       return evenIndexed;
     } 
+    */
 
 }
