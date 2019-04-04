@@ -33,6 +33,12 @@ public class WC
         }
         System.out.println("Words: " + words.size());
         
-        
+        Scanner lineScan = new Scanner(inputFile);
+        lineScan.useDelimiter("\r\n|\r\n");
+        ArrayList<String> lines = new ArrayList<String>();
+        while(lineScan.hasNext()){
+            lines.add(lineScan.next());
+        }
+        System.out.println("Lines: " + lines.size());
     }
 }
