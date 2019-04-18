@@ -15,7 +15,7 @@ public class FractalTree extends JComponent
     private int branchLength;
     private final double ANGLESCALE = .9;
     private int maxOrder = 10;
-    private final int ANGLESUB = 39;
+    private final int ANGLECHANGE = 39;
     private final int WIDTH = 800;
     private final int HEIGHT = 800;
     public FractalTree(){
@@ -33,8 +33,8 @@ public class FractalTree extends JComponent
         if (orderNum >= maxOrder){
             return;
         }
-        double rightAng = angle - ANGLESUB * ANGLESCALE;
-        double leftAng = angle + ANGLESUB * ANGLESCALE;
+        double rightAng = angle - ANGLECHANGE * ANGLESCALE;
+        double leftAng = angle + ANGLECHANGE * ANGLESCALE;
         
         double len = branchLength * .8;
         if(orderNum == 0){
